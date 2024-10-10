@@ -50,3 +50,4 @@ answers2.forEach(answer2 => {
   buttonfooter.textContent = answer2;
   div2.appendChild(buttonfooter);
 });
+//
