@@ -57,8 +57,11 @@ answers2.forEach(answer2 => {
 });
 
 let index = 0;
-let buttonPreview = document.getElementById('footer-btn');
-
+let btn = document.querySelectorAll('footer-btn');
+let buttonPreview = btn[0];
+let buttonNext = btn[0];
+buttonPreview.disabled = true;
+p.textContent = preguntas[index];
 if (index == 0) {
-  buttonPreview.disabled = true;
+ 
 } 
