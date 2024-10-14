@@ -9,9 +9,14 @@ let h2 = document.createElement("h2");
 let p = document.createElement("p");
 let ul = document.createElement("ul");
 let div2 = document.createElement("div");
-
+const preguntas = [
+  'What is the capital of France?',
+  'What is the longest river in the world?',
+  'Who wrote Romeo and Juliet',
+  'How many planets have our Solar System'
+]
 h2.textContent = 'Quiz Question';
-p.textContent = 'What is the capital of France';
+
 ul.setAttribute("class", "container-answers");
 
 div1.appendChild(h2);
@@ -50,4 +55,10 @@ answers2.forEach(answer2 => {
   buttonfooter.textContent = answer2;
   div2.appendChild(buttonfooter);
 });
-//
+
+let index = 0;
+let buttonPreview = document.getElementById('footer-btn');
+p.textContent = preguntas[index];
+if (index == 0) {
+  buttonPreview.disabled = true;
+} 
