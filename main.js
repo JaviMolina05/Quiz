@@ -58,7 +58,7 @@ answers2.forEach(answer2 => {
 
 let index = 0;
 let buttonPreview = document.getElementById('footer-btn');
-p.textContent = preguntas[index];
+
 if (index == 0) {
   buttonPreview.disabled = true;
 } 
